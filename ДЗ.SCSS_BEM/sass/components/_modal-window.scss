@@ -1,0 +1,55 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  height: 581px;
+  width: 528px;
+  padding: 40px;
+
+  background-color: var(--background-general-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform var(--animation-duration) var(--animation-cubic),
+    visibility var(--animation-duration) var(--animation-cubic);
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  @extend %align;
+
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: 0;
+
+  background-color: var(--background-general-white);
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  transition: fill var(--animation-duration) var(--animation-cubic);
+
+  &:hover {
+    fill: var(--button-active-blue);
+  }
+}
+
+.modal__close-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.modal__title {
+  margin-bottom: 12px;
+
+  @include font(20, 700, 23);
+  text-align: center;
+}

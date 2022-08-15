@@ -1,0 +1,13 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  @include font(26, 700, 31);
+  color: var(--logo-title-black);
+}
+
+.logo__span_accent{
+  color: var(--button-active-blue);
+}
+
+.logo_dark-theme {
+  color: var(--background-general-white);
+}

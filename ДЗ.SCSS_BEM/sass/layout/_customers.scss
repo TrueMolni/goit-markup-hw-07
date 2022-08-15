@@ -1,0 +1,37 @@
+.regular-customers__secondary-title {
+  margin-bottom: 50px;
+}
+
+.regular-customers__list {
+  display: flex;
+}
+
+.regular-customers__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.regular-customers__link {
+  @extend %align;
+  width: 170px;
+  height: 92px;
+
+  background-color: var(--background-general-white);
+  color: var(--link-nonactvie);
+  border: 1px solid var(--link-nonactvie);
+  border-radius: 4px;
+
+  transition: color var(--animation-duration) var(--animation-cubic),
+    border var(--animation-duration) var(--animation-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--button-active-blue);
+    border: 1px solid var(--button-active-blue);
+  }
+}
+
+.regular-customers__logo {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
